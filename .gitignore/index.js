@@ -38,7 +38,7 @@ bot.on('message', async message => {
             const user = reaction.users.last();
             const guild = reaction.message.guild;
             const member = guild.member(user) || await guild.fetchMember(user);
-            member.addRole("468691051205623808");
+            member.addRole("461667360378716161");
             console.log(`Added the role Fortnite to ${member.displayName}`);
             reaction.remove(user)
     });
@@ -46,7 +46,7 @@ bot.on('message', async message => {
             const user = reaction.users.last(); 
             const guild = reaction.message.guild; 
             const member = guild.member(user) || await guild.fetchMember(user); 
-            member.addRole("468690966837198858");
+            member.addRole("461756859263614977");
             console.log(`Added the role Overwatch to ${member.displayName}`);
             reaction.remove(user)
     });
@@ -54,7 +54,7 @@ bot.on('message', async message => {
             const user = reaction.users.last(); 
             const guild = reaction.message.guild;
             const member = guild.member(user) || await guild.fetchMember(user); 
-            member.addRole("468691009015119893"); 
+            member.addRole("461667873413267467"); 
             console.log(`Added the role Minecraft to ${member.displayName}`);
             reaction.remove(user)
     });
@@ -62,9 +62,9 @@ bot.on('message', async message => {
             const user = reaction.users.last(); 
             const guild = reaction.message.guild; 
             const member = guild.member(user) || await guild.fetchMember(user); 
-            member.removeRole("468691051205623808"); 
-            member.removeRole("468690966837198858");
-            member.removeRole("468691009015119893");
+            member.removeRole("461667360378716161"); 
+            member.removeRole("461756859263614977");
+            member.removeRole("461667873413267467");
             console.log(`Remove all roles to ${member.displayName}`);
             reaction.remove(user)
     });
