@@ -40,6 +40,7 @@ bot.on('message', async message => {
             const member = guild.member(user) || await guild.fetchMember(user);
             member.addRole("468691051205623808");
             console.log(`Added the role Fortnite to ${member.displayName}`);
+            reaction.remove(user)
     });
         collector2.on('collect', async reaction => { 
             const user = reaction.users.last(); 
@@ -47,6 +48,7 @@ bot.on('message', async message => {
             const member = guild.member(user) || await guild.fetchMember(user); 
             member.addRole("468690966837198858");
             console.log(`Added the role Overwatch to ${member.displayName}`);
+            reaction.remove(user)
     });
         collector3.on('collect', async reaction => { 
             const user = reaction.users.last(); 
@@ -54,6 +56,7 @@ bot.on('message', async message => {
             const member = guild.member(user) || await guild.fetchMember(user); 
             member.addRole("468691009015119893"); 
             console.log(`Added the role Minecraft to ${member.displayName}`);
+            reaction.remove(user)
     });
         collector4.on('collect', async reaction => { 
             const user = reaction.users.last(); 
@@ -63,6 +66,7 @@ bot.on('message', async message => {
             member.removeRole("468690966837198858");
             member.removeRole("468691009015119893");
             console.log(`Remove all roles to ${member.displayName}`);
+            reaction.remove(user)
     });
 
         
