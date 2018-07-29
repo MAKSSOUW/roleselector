@@ -11,6 +11,7 @@ bot.login(process.env.TOKEN);
 bot.on('message', async message => {
     
     if(message.content === '!panelrole') {
+        if(message.guild.channels.id === '473067588314988544' || message.guild.channels.id === '461666810656456716') return message.delete();
         var embed = new Discord.RichEmbed()
         .setTitle('RoleSelector, prenez le rôle souhaité disponible !')
         .setDescription(':pick:️ : Fortnite\n:medal: : Overwatch\n:bow_and_arrow: : Minecraft\n:x: : Retire les rôles proposé ici sur vous')    
